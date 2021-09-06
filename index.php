@@ -8,9 +8,40 @@
       <title>Contact App</title>
 </head>
 <body>
-      
+  <!-- Header Start-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My-Contact-Book</a>
+    <div class="collapse navbar-collapse fs-3 d-flex justify-content-evenly" id="navbarColor03">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Contacts
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Create </a>
+     </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Update </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Delete   </a>
+        </li>
+        </ul>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+    <div class="d-flex justify-content-center">
+    <form class="d-flex justify-content-center">
+        <input class="form-control me-sm-2 " type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+</nav>
+      <!-- Header Ends -->
 
-
+   
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

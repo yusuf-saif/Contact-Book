@@ -1,6 +1,45 @@
 <?php
   include 'inc/header.php'
 ?>
+<?php 
+//$con = mysql_connect("localhost","root","");
+//
+//if (!$con)
+//
+//  {
+//
+//  die('Could not connect: ' . mysql_error());
+//
+//  }
+//
+// 
+//
+//mysql_select_db("contactapp", $con);
+//
+// 
+//
+//$sql="INSERT INTO contacts (name, phone, email)
+//
+//VALUES
+//
+//('$_POST[name]','$_POST[phone]', '$_POST[email]')";
+//
+// 
+//
+//if (!mysql_query($sql,$con))
+//
+//  {
+//
+//  die('Error: ' . mysql_error());
+//
+//  }
+//
+//echo "Yo! New Contact Created Succesfully.";
+//
+ 
+
+//mysql_close($con)
+?> 
       <!-- Contact dsplay start -->
       <table class="table table-hover">
   <thead>
@@ -78,3 +117,4 @@
    <?php
    include 'inc/footer.php'
    ?>
+

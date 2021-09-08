@@ -12,7 +12,7 @@ Basic Functionality<br>.
 
 Uncompleted Part <br>
 1. Create Account <br>
-2. Create Contact <br>\
+2. Create Contact <br>
 3. Update and also delete Contact <br>
 
 No fears in time i would be through

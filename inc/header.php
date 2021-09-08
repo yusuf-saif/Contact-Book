@@ -15,12 +15,12 @@
     <div class="collapse navbar-collapse fs-3 d-flex justify-content-evenly" id="navbarColor03">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Contacts
+          <a class="nav-link active" href="index.php">Contacts
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
       <li class="nav-item">
-          <a class="nav-link" href="#">Create </a>
+          <a class="nav-link" href="create.php">Create </a>
      </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Update </a>

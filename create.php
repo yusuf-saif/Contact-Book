@@ -15,7 +15,7 @@
             </div>
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
-              <input  type="email" class="form-control" id="inputEmail4" name="email" placeholder="Also don't forget the mail...">
+              <input  type="email" class="form-control" id="inputEmail" name="email" placeholder="Also don't forget the mail...">
             </div>
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>

@@ -1,5 +1,11 @@
 <?php  
-          $conn = mysqli_connect("localhost", "root", "", "contactappdb");
+
+		$host = "localhost";
+		$username = "root";
+		$password = "";
+		$db_name = "contactappdb";
+
+          $conn = mysqli_connect($host, $username, $password, $db_name);
 
         // Check connection
         if($conn === false){
@@ -12,7 +18,8 @@
         $email = mysqli_real_escape_string($conn, $_REQUEST['email']);
 
         // Attempt insert query execution
-        $sql = "INSERT INTO mycontacts (name, phone, email) VALUES ('$name', '$phone', '$email')";
+        $sql = "INSERT INTO mycontacts (name, phone, email)
+		 VALUES ('$name', '$phone', '$email')";
         if(mysqli_query($conn , $sql)){
             echo "Yoo! your Contact have been added Succesfully 🙂🙂.";
         } else{

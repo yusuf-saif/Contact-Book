@@ -1,42 +1,71 @@
+  <!-- Header Begins -->
 <?php
   include 'inc/header.php'
 ?>
+    <!-- Header Ends -->
 
 
+
+
+    <!-- Database Connection -->
 <?php 
     include 'conn.php'
     ?>
-<?php  
-        /*  $conn = mysqli_connect("localhost", "root", "", "contactappdb");
+    <!-- Database Ends -->
 
-        // Check connection
-        if($conn === false){
-            die("ERROR: Could not connect. " . mysqli_connect_error());
-        }
 
-        // Escape user inputs for security
-        $name = mysqli_real_escape_string($conn, $_REQUEST['name']);
-        $phone = mysqli_real_escape_string($conn, $_REQUEST['phone']);
-        $email = mysqli_real_escape_string($conn, $_REQUEST['email']);
+    <!-- Table for Contacts Starts -->
+    <table class="table table-striped table-bordered  table-hover">
+        <thead>
+            <tr>
+                <th scope="col">S/No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Phone</th>
+                <th scope="col">email</th>
+            </tr>
+          </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark Essien</td>
+                <td>123456789</td>
+                <td>markesien@mdo.com</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Mark Essien</td>
+                <td>123456789</td>
+                <td>markesien@mdo.com</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Mark Essien</td>
+                <td>123456789</td>
+                <td>markesien@mdo.com</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Mark Essien</td>
+                <td>123456789</td>
+                <td>markesien@mdo.com</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Mark Essien</td>
+                <td>123456789</td>
+                <td>markesien@mdo.com</td>
+              </tr>
+  </tbody>
+</table>
 
-        // Attempt insert query execution
-        $sql = "INSERT INTO mycontacts (name, phone, email) VALUES ('$name', '$phone', '$email')";
-        if(mysqli_query($conn , $sql)){
-            echo "Yoo! your Contact have been added Succesfully 🙂🙂.";
-        } else{
-            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-        }
+      <!-- Table for Contacts Ends -->
 
-        // Close connection
-        mysqli_close($conn); */
 
-?>
-
-<!-- Contact Display Ends -->
+    <!-- Footer Starts -->
    <?php
    include 'inc/footer.php'
    ?>
-
+    <!-- Footer Ends -->
 
 
 

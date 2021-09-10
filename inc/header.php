@@ -27,8 +27,13 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Delete   </a>
-        </li>
+        </li> 
+        <li class="mx-auto" style="width: 200px;"><?php 
+        date_default_timezone_set("Africa/Lagos");
+        echo date("h : i : sa"  ); ?></li>
+        
         </ul>
+       
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>  

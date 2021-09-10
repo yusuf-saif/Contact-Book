@@ -2,28 +2,31 @@
   include 'inc/header.php'
 ?>
 <?php  
-       $servername = "localhost";  
-       $username = "root";  
-       $password = ""; 
-       $db_name = "contactapp"; 
-       $conn = mysqli_connect ($servername ,$username , $password, $db_name);
+          $conn = mysqli_connect("localhost", "root", "", "contactappdb");
 
-	 $name = $_POST['name'];
-	 $phone = $_POST['phone'];
-	 $email = $_POST['email'];
+        // Check connection
+        if($conn === false){
+            die("ERROR: Could not connect. " . mysqli_connect_error());
+        }
 
-	 $sql = "INSERT INTO `tbl_contacts` ( `fldname`, `fldphonenumber`, `fldemail`) VALUES ('$name', '$phone', '$email')";
+        // Escape user inputs for security
+        $name = mysqli_real_escape_string($conn, $_REQUEST['name']);
+        $phone = mysqli_real_escape_string($conn, $_REQUEST['phone']);
+        $email = mysqli_real_escape_string($conn, $_REQUEST['email']);
 
-	 $rs = mysqli_query($conn, $sql);
+        // Attempt insert query execution
+        $sql = "INSERT INTO mycontacts (name, phone, email) VALUES ('$name', '$phone', '$email')";
+        if(mysqli_query($conn , $sql)){
+            echo "Yoo! your Contact have been added Succesfully 🙂🙂.";
+        } else{
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+        }
 
-	 if($rs)
-{
-	echo "Yo!  You have successfully Added a contact Dude..";
-}else{
-  echo "Seems it didn't work boss";
-}
+        // Close connection
+        mysqli_close($conn);
 
 ?>
+
 <!-- Contact Display Ends -->
    <?php
    include 'inc/footer.php'

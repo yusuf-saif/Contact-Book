@@ -1,8 +1,13 @@
 <?php
   include 'inc/header.php'
 ?>
+
+
+<?php 
+    include 'conn.php'
+    ?>
 <?php  
-          $conn = mysqli_connect("localhost", "root", "", "contactappdb");
+        /*  $conn = mysqli_connect("localhost", "root", "", "contactappdb");
 
         // Check connection
         if($conn === false){
@@ -23,7 +28,7 @@
         }
 
         // Close connection
-        mysqli_close($conn);
+        mysqli_close($conn); */
 
 ?>
 

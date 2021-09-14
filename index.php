@@ -25,6 +25,8 @@
             </tr>
           </thead>
         <tbody>
+          <?php while (($row = mysqli_fetch_array($results)) {?>
+         
             <tr>
                 <th scope="row">1</th>
                 <td>Mark Essien</td>

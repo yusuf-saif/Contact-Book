@@ -26,7 +26,18 @@
           </thead>
         <tbody>
           <?php while (($row = mysqli_fetch_array($results)) {?>
-         
+          <tr>
+          <td><?php echo $row['name']; ?></td>
+          <td><?php echo $row['phone']; ?></td>
+          <td><?php echo $row['email']; ?></td>
+          <td>
+          <i class="bi bi-pencil-square"><a href="index.php?edit=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a></i> 
+          </td>
+          <td>
+          <i class="bi bi-trash"> <a href="server.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a></i>
+          </td>
+        </tr>
+      <?php } ?>
             <tr>
                 <th scope="row">1</th>
                 <td>Mark Essien</td>
@@ -64,8 +75,7 @@
 
 
     <!-- Footer Starts -->
-   <?php
-   include 'inc/footer.php'
+   <?php  include 'inc/footer.php'
    ?>
     <!-- Footer Ends -->
 

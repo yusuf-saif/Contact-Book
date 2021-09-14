@@ -1,5 +1,4 @@
-# Contact Book <br>
-A basic Contact book for storing contacts on the web (Not fully Functional)
+# Contact Book <br>A basic Contact book for storing contacts on the web (Not fully Functional)
 A basic Contact book that have basic operations like:<br>
 1. Create Contact <br>
 2. Update Contact <br>

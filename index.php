@@ -38,7 +38,7 @@
           </td>
         </tr>
       <?php } ?>
-            <tr>
+            <!-- <tr>
                 <th scope="row">1</th>
                 <td>Mark Essien</td>
                 <td>123456789</td>
@@ -67,7 +67,7 @@
                 <td>Mark Essien</td>
                 <td>123456789</td>
                 <td>markesien@mdo.com</td>
-              </tr>
+              </tr> -->
   </tbody>
 </table>
 
@@ -75,7 +75,7 @@
 
 
     <!-- Footer Starts -->
-   <?php  include 'inc/footer.php'
+   <?php)  include 'inc/footer.php'
    ?>
     <!-- Footer Ends -->
 

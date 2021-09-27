@@ -9,11 +9,11 @@
         });
     </script>
     <div class="wrapper">
-        <div class="container-fluid">
+       <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mt-5 mb-3 clearfix">
-                        <h2 class="pull-left">Contact Details</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: center;" class="mt-5 mb-3">
+                        <h2>Contact Details</h2>
                         <a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Contact</a>
                     </div>
                     <?php          
